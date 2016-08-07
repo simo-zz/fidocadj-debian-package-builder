@@ -1,0 +1,12 @@
+Package: fidocadj-0.24.6.deb
+Mainteiner: simo-zz simonzz@yahoo.it 
+Architecture: i386
+Depends: openjdk-7-jre, openjdk-7-jre-lib
+Description: 2D CAD for electrical and electronics schematics developed by Davide Bucci
+ FidocadJ is a 2D CAD for electrical and electronics schematics developed by Davide Bucci. This is a test.
+Version: 0.24.6
+Source: usr/local/bin/fidocadj.jar
+Section: CAD
+Maintainer: simon-zz simonzz@yahoo.it
+Build-Depends: openjdk-7-jre, openjdk-7-jre-lib
+Standards-Version: 0.24.6
