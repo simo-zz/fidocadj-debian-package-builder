@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION="1.0.0"
+VERSION="2.0.0"
 MAINTEINER="simon-zz simonzz@yahoo.it"
 
 DEBDIR="deb"
@@ -8,7 +8,10 @@ SUBDEBDIR="DEBIAN"
 CTLFILE="control"
 CTLPATH="${DEBDIR}/${SUBDEBDIR}/${CTLFILE}"
 
-BINDIR="usr/local/bin"
+POSTINST="${DEBDIR}/${SUBDEBDIR}/postinst"
+POSTRM="${DEBDIR}/${SUBDEBDIR}/postrm"
+
+BINDIR="usr/local/share/fidocadj/bin/"
 BINFILE="fidocadj.jar"
 BINPATH="${DEBDIR}/${BINDIR}/${BINFILE}"
 
@@ -24,6 +27,7 @@ if [ -z ${BINVERSION} ]; then
 fi
 
 if [ -e "${CTLPATH}" -a -e "${BINPATH}" ]; then
+
 	sed "s/Package.*/Package: ${PACKAGENAME}/g" -i "${DEBDIR}/${SUBDEBDIR}/${CTLFILE}"
 	sed "s/Version.*/Version: ${BINVERSION}/g" -i "${DEBDIR}/${SUBDEBDIR}/${CTLFILE}"
 	dpkg -b deb/ fidocadj-${BINVERSION}.deb

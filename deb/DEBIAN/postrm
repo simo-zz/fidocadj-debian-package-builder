@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# remove link created by the package
+unlink /usr/local/bin/fidocadj.jar
+
+# remove desktop file in /usr/share/applications
+unlink /usr/share/applications/fidocadj.desktop
+

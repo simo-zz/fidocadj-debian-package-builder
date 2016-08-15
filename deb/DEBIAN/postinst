@@ -1,4 +1,6 @@
 #!/bin/sh
 
-chown root:root usr/local/bin/fidocadj.jar
-chmod 755 usr/local/bin/fidocadj.jar
+chown root:root /usr/local/share/fidocadj/bin/fidocadj.jar
+chmod 755 /usr/local/share/fidocadj/bin/fidocadj.jar
+ln -s /usr/local/share/fidocadj/bin/fidocadj.jar /usr/local/bin/fidocadj.jar
+ln -s /usr/local/share/fidocadj/desktop/fidocadj.desktop /usr/share/applications/fidocadj.desktop
