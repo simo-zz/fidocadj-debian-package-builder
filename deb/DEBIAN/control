@@ -1,4 +1,4 @@
-Package: fidocadj-0.24.6.deb
+Package: fidocadj-0.24.6
 Mainteiner: simo-zz simonzz@yahoo.it 
 Architecture: i386
 Depends: openjdk-7-jre, openjdk-7-jre-lib
