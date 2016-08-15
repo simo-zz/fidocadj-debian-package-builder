@@ -17,7 +17,7 @@ BINPATH="${DEBDIR}/${BINDIR}/${BINFILE}"
 
 # BINVERSION="0.24.6"
 BINVERSION=$1
-PACKAGENAME="fidocadj-${BINVERSION}"
+PACKAGENAME="fidocadj-${BINVERSION}.deb"
 
 if [ -z ${BINVERSION} ]; then
 	echo "Version is empty."
