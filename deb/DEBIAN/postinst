@@ -1,0 +1,4 @@
+#!/bin/sh
+
+chown root:root usr/local/bin/fidocadj.jar
+chmod 755 usr/local/bin/fidocadj.jar
