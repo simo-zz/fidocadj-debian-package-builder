@@ -26,6 +26,10 @@ if [ -z ${BINVERSION} ]; then
 	exit 1
 fi
 
+LINK="https://github.com/DarwinNE/FidoCadJ/releases/download/v${BINVERSION}/fidocadj.jar"
+
+wget -q -O ./deb/usr/local/share/fidocadj/bin/fidocadj.jar $LINK
+
 if [ -e "${CTLPATH}" -a -e "${BINPATH}" ]; then
 
 	sed "s/Package.*/Package: ${PACKAGENAME}/g" -i "${DEBDIR}/${SUBDEBDIR}/${CTLFILE}"
