@@ -1,8 +1,8 @@
 Package: fidocadj-0.24.6.deb
 Mainteiner: simo-zz simonzz@yahoo.it 
 Architecture: all
-Description: 2D CAD for electrical and electronics schematics developed by Davide Bucci
- FidocadJ is a 2D CAD for electrical and electronics schematics developed by Davide Bucci. This is a test.
+Description: FidoCadJ is a simple graphic editor with a collection of symbols for electronic circuits.
+ FidoCadJ is a free user-friendly vector graphic editor which runs on MacOSX, Linux, Windows and Android. It is very easy to use and it can export drawings in a variety of graphic formats. FidoCadJ stores the drawings in a very simple text-only file format which can be easily copy/pasted in forums and newsgroup. Libraries containing a huge variety of symbols for electronics are available and you can create your own.
 Version: 0.24.6
 Source: /usr/local/share/fidocadj/bin/fidocadj.jar
 Maintainer: simon-zz simonzz@yahoo.it
